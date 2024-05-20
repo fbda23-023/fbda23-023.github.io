@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Warner Bros. - Movies</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <style>
+
+   /* Movies hero banner styles */
+    .movies-hero-banner {
+      background-image: url('Images/banner.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 0;
+      position: relative; /* Added position relative */
+    }
+    .movies-hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    }
+    .movies-hero-banner h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .movies-hero-banner p {
+      font-size: 1.25rem;
+      margin-bottom: 40px;
+    }
+    /* Movie card styles */
+    .movies-list .card {
+      margin-bottom: 30px;
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+      border-radius: 15px; /* Rounded corners */
+      overflow: hidden; /* Hide overflow content */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    .movies-list .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    }
+    .movies-list .card-img-top {
+      height: 300px;
+      object-fit: cover;
+    }
+    .movies-list .card-body {
+      background-color: #ffffff; /* White background */
+      color: #333; /* Dark text */
+      padding: 20px; /* Increased padding */
+    }
+    .movies-list .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .movies-list .card-meta {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+	     <img src="C:\Users\willi\OneDrive\Documents\warner-bros\img.png\banner.png"width="100%"height="80">
+	</div>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container"> 
+        <a class="navbar-brand" href="#">Warner Bros.</a>
+        <div class="search-form">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="TVShows.html">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="GamesApps.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Collections.html">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="movies-hero-banner">
+      <div class="container"> 
+        <div class="hero-content">
+          <h1>Welcome to Warner Bros.</h1>
+          <p>Explore our world of the latest thought provoking and award winng movies!</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="movies-list">
+        <h2>Popular Releases</h2>
+        <div class="row">  
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Godzilla X King: The New Empire">
+              <div class="card-body">
+                <h5 class="card-title">The Vampire Diaries</h5>
+                <p class="card-meta">Genre: Drama | Seasons: 8</p>
+                <a href="vamp.html" class="btn btn-primary">Watch Trailer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/MV5BNDI0YmI3ZDAtMWI0OC00YWE2LTg5ZmUtNGJlMTViZDk1ZDgyXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Godzilla X King: The New Empire">
+              <div class="card-body">
+                <h5 class="card-title">Riverdale</h5>
+                <p class="card-meta">Genre: Drama | Seasons: 7</p>
+                <a href="Riv.html" class="btn btn-primary">Watch Trailer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Godzilla X King: The New Empire">
+              <div class="card-body">
+                <h5 class="card-title">The 100</h5>
+                <p class="card-meta">Genre: Drama | Seasons: 7</p>
+                <a href="" class="btn btn-primary">Watch Trailer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/MV5BNjY4MTE3MWYtYzU3YS00Y2UxLTk2NDMtMjJlODk2MzBmOTdiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Godzilla X King: The New Empire">
+              <div class="card-body">
+                <h5 class="card-title">Titans</h5>
+                <p class="card-meta">Genre: Action | Seasons: 4</p>
+                <a href="" class="btn btn-primary">Watch Trailer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/MV5BYmI1YWU0NmItZWEwMC00YWIyLWIyMzAtNWU4YTZjNWYzZmJhXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Godzilla X King: The New Empire">
+              <div class="card-body">
+                <h5 class="card-title">The Fresh Prince Of Bel-Air</h5>
+                <p class="card-meta">Genre: Sitcom | Seasons: 6</p>
+                <a href="" class="btn btn-primary">Watch Trailer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/MV5BZTlmYjk0ZTItODNhMC00YmIyLWExZWEtYjk0YWQzMGNhOTZmXkEyXkFqcGdeQXVyMTY0Njc2MTUx._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Godzilla X King: The New Empire">
+              <div class="card-body">
+                <h5 class="card-title">Young Sheldon</h5>
+                <p class="card-meta">Genre: Sitcom | Seasons: 7</p>
+                <a href="" class="btn btn-primary">Watch Trailer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-social-icons">
+        <p>
+          <a href="http://www.Facebook.com" class="active">Facebook</a>
+          <a href="http://www.Twitter.com" class="active">Twitter</a>
+          <a href="http://www.Instagram.com" class="active">Instagram</a>
+        </p>
+      </div>
+      <p>&copy; 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
